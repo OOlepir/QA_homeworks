@@ -26,7 +26,7 @@ def test_checkout_total_price():
     driver.find_element(By.ID, "continue").click()
 
     total_price = driver.find_element(By.CLASS_NAME, "summary_total_label").text.split(": ")[1]
-    assert total_price == "$58.29", f"Підсумкова сума невірна: {total_price}"
+    assert total_price == "$58.29", f"The total amount is incorrect: {total_price}"
 
     driver.quit()
 
